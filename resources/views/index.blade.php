@@ -24,9 +24,11 @@
                     </div>
                 </div>
 
-                @if ('session("status")')
+               @if (session('status'))
+              
                     <div class="alert alert-success">{{ session('status') }}</div>
-                @endif
+          
+               @endif
 
                 @foreach ($posts as $post)
                     <div class="card mb-4">
